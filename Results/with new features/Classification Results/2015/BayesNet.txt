@@ -1,0 +1,106 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.K2 -- -P 1 -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+Relation:     fsi-2015-extended-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.unsupervised.attribute.InterquartileRange-Rfirst-last-O3.0-E6.0-weka.filters.unsupervised.attribute.InterquartileRange-Rfirst-last-O3.0-E6.0-P-weka.filters.unsupervised.attribute.Remove-R25-54,56-58,61-66-weka.filters.unsupervised.instance.RemoveWithValues-S0.0-C23-Llast-weka.filters.unsupervised.instance.RemoveWithValues-S0.0-C24-Llast-weka.filters.unsupervised.attribute.Discretize-B4-M-1.0-R4-precision6
+Instances:    172
+Attributes:   27
+              ï»¿Country
+              Year
+              Rank
+              Total
+              C1: Security Apparatus
+              C2: Factionalized Elites
+              C3: Group Grievance
+              E1: Economy
+              E2: Economic Inequality
+              E3: Human Flight and Brain Drain
+              P1: State Legitimacy
+              P2: Public Services
+              P3: Human Rights
+              S1: Demographic Pressures
+              S2: Refugees and IDPs
+              X1: External Intervention
+              Domestic Credit provided by financial sector
+              Education Index
+              Exports and Imports
+              Life Expectancy at Birth
+              Infant Mortality Rate
+              Unemployment
+              Outlier
+              ExtremeValue
+              Domestic Credit provided by financial sector_Outlier
+              Exports and Imports_Outlier
+              Exports and Imports_ExtremeValue
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Bayes Network Classifier
+not using ADTree
+#attributes=27 #classindex=3
+Network structure (nodes followed by parents)
+ï»¿Country(177): Total 
+Year(1): Total 
+Rank(4): Total 
+Total(4): 
+C1: Security Apparatus(4): Total 
+C2: Factionalized Elites(4): Total 
+C3: Group Grievance(4): Total 
+E1: Economy(4): Total 
+E2: Economic Inequality(4): Total 
+E3: Human Flight and Brain Drain(4): Total 
+P1: State Legitimacy(5): Total 
+P2: Public Services(4): Total 
+P3: Human Rights(5): Total 
+S1: Demographic Pressures(4): Total 
+S2: Refugees and IDPs(4): Total 
+X1: External Intervention(5): Total 
+Domestic Credit provided by financial sector(3): Total 
+Education Index(4): Total 
+Exports and Imports(1): Total 
+Life Expectancy at Birth(3): Total 
+Infant Mortality Rate(3): Total 
+Unemployment(1): Total 
+Outlier(2): Total 
+ExtremeValue(2): Total 
+Domestic Credit provided by financial sector_Outlier(2): Total 
+Exports and Imports_Outlier(2): Total 
+Exports and Imports_ExtremeValue(2): Total 
+LogScore Bayes: -3539.4856526476583
+LogScore BDeu: -9544.342913996043
+LogScore MDL: -7660.8621595048335
+LogScore ENTROPY: -5264.703480548166
+LogScore AIC: -6195.703480548166
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         163               94.7674 %
+Incorrectly Classified Instances         9                5.2326 %
+Kappa statistic                          0.9241
+Mean absolute error                      0.0273
+Root mean squared error                  0.1487
+Relative absolute error                  7.8314 %
+Root relative squared error             35.6496 %
+Total Number of Instances              172     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.840    0.007    0.955      0.840    0.894      0.879    0.997     0.985     Sustainable
+                 0.914    0.029    0.889      0.914    0.901      0.876    0.990     0.955     Stable
+                 1.000    0.042    0.951      1.000    0.975      0.954    0.998     0.997     Warning
+                 0.943    0.000    1.000      0.943    0.971      0.964    1.000     0.998     Alert
+Weighted Avg.    0.948    0.026    0.949      0.948    0.947      0.929    0.996     0.987     
+
+=== Confusion Matrix ===
+
+  a  b  c  d   <-- classified as
+ 21  4  0  0 |  a = Sustainable
+  1 32  2  0 |  b = Stable
+  0  0 77  0 |  c = Warning
+  0  0  2 33 |  d = Alert
+

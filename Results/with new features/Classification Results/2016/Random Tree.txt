@@ -1,0 +1,242 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     fsi-2016_extended-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.unsupervised.attribute.InterquartileRange-Rfirst-last-O3.0-E6.0-weka.filters.unsupervised.attribute.InterquartileRange-Rfirst-last-O3.0-E6.0-P-weka.filters.unsupervised.attribute.Remove-R25-52,54-56,59-62,64-weka.filters.unsupervised.instance.RemoveWithValues-S0.0-C23-Llast-weka.filters.unsupervised.instance.RemoveWithValues-S0.0-C24-Llast-weka.filters.unsupervised.attribute.Discretize-B4-M-1.0-R4-precision6
+Instances:    171
+Attributes:   28
+              Country
+              Year
+              Rank
+              Total
+              C1: Security Apparatus
+              C2: Factionalized Elites
+              C3: Group Grievance
+              E1: Economy
+              E2: Economic Inequality
+              E3: Human Flight and Brain Drain
+              P1: State Legitimacy
+              P2: Public Services
+              P3: Human Rights
+              S1: Demographic Pressures
+              S2: Refugees and IDPs
+              X1: External Intervention
+              Domestic credit provided by financial sector
+              Education Index
+              Exports and Imports
+              Life Expectancy at Birth
+              Infant Mortality Rate
+              Unemployment
+              Outlier
+              ExtremeValue
+              Domestic credit provided by financial sector_Outlier
+              Exports and Imports_Outlier
+              Exports and Imports_ExtremeValue
+              Unemployment_Outlier
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+
+RandomTree
+==========
+
+Rank = 9th : Alert (1/0)
+Rank = 124th : Stable (1/0)
+Rank = 76th : Warning (1/0)
+Rank = 37th : Alert (1/0)
+Rank = 129th : Stable (1/0)
+Rank = 140th : Stable (1/0)
+Rank = 109th : Warning (1/0)
+Rank = 172nd : Sustainable (2/0)
+Rank = 167th : Sustainable (1/0)
+Rank = 81st : Warning (1/0)
+Rank = 137th : Stable (2/0)
+Rank = 121st : Stable (1/0)
+Rank = 36th : Alert (1/0)
+Rank = 139th : Stable (1/0)
+Rank = 92nd : Warning (1/0)
+Rank = 164th : Sustainable (1/0)
+Rank = 116th : Stable (1/0)
+Rank = 72nd : Warning (2/0)
+Rank = 78th : Warning (1/0)
+Rank = 75th : Warning (1/0)
+Rank = 88th : Warning (2/0)
+Rank = 120th : Stable (1/0)
+Rank = 117th : Stable (1/0)
+Rank = 123rd : Stable (1/0)
+Rank = 132nd : Stable (1/0)
+Rank = 41st : Warning (1/0)
+Rank = 15th : Alert (1/0)
+Rank = 46th : Warning (1/0)
+Rank = 22nd : Alert (1/0)
+Rank = 169th : Sustainable (1/0)
+Rank = 101st : Warning (1/0)
+Rank = 3rd : Alert (1/0)
+Rank = 7th : Alert (1/0)
+Rank = 150th : Sustainable (1/0)
+Rank = 86th : Warning (2/0)
+Rank = 67th : Warning (1/0)
+Rank = 57th : Warning (2/0)
+Rank = 8th : Alert (1/0)
+Rank = 31st : Alert (1/0)
+Rank = 142nd : Stable (2/0)
+Rank = 136th : Stable (1/0)
+Rank = 114th : Stable (1/0)
+Rank = 119th : Sustainable (0/0)
+Rank = 151st : Sustainable (1/0)
+Rank = 175th : Sustainable (1/0)
+Rank = 39th : Warning (1/0)
+Rank = 105th : Warning (1/0)
+Rank = 84th : Warning (1/0)
+Rank = 38th : Warning (1/0)
+Rank = 96th : Warning (1/0)
+Rank = 53rd : Warning (1/0)
+Rank = 18th : Alert (1/0)
+Rank = 146th : Stable (1/0)
+Rank = 24th : Alert (1/0)
+Rank = 82nd : Warning (1/0)
+Rank = 178th : Sustainable (1/0)
+Rank = 158th : Sustainable (1/0)
+Rank = 98th : Warning (3/0)
+Rank = 48th : Warning (1/0)
+Rank = 165th : Sustainable (1/0)
+Rank = 102nd : Warning (1/0)
+Rank = 130th : Stable (1/0)
+Rank = 122nd : Stable (1/0)
+Rank = 61st : Warning (1/0)
+Rank = 12th : Alert (1/0)
+Rank = 17th : Alert (1/0)
+Rank = 104th : Warning (1/0)
+Rank = 10th : Alert (1/0)
+Rank = 68th : Warning (1/0)
+Rank = 135th : Stable (1/0)
+Rank = 170th : Sustainable (1/0)
+Rank = 70th : Warning (1/0)
+Rank = 47th : Warning (1/0)
+Rank = 11th : Alert (1/0)
+Rank = 69th : Warning (1/0)
+Rank = 148th : Stable (1/0)
+Rank = 118th : Stable (1/0)
+Rank = 157th : Sustainable (0/0)
+Rank = 77th : Warning (1/0)
+Rank = 113th : Warning (1/0)
+Rank = 20th : Alert (1/0)
+Rank = 126th : Stable (1/0)
+Rank = 64th : Warning (1/0)
+Rank = 55th : Warning (1/0)
+Rank = 141st : Stable (1/0)
+Rank = 40th : Warning (1/0)
+Rank = 66th : Warning (1/0)
+Rank = 27th : Alert (1/0)
+Rank = 25th : Alert (1/0)
+Rank = 149th : Sustainable (1/0)
+Rank = 168th : Sustainable (0/0)
+Rank = 111th : Warning (1/0)
+Rank = 56th : Warning (1/0)
+Rank = 44th : Warning (2/0)
+Rank = 115th : Stable (1/0)
+Rank = 91st : Warning (1/0)
+Rank = 29th : Alert (1/0)
+Rank = 154th : Sustainable (0/0)
+Rank = 28th : Alert (1/0)
+Rank = 147th : Stable (1/0)
+Rank = 107th : Warning (1/0)
+Rank = 80th : Warning (1/0)
+Rank = 93rd : Warning (1/0)
+Rank = 128th : Stable (1/0)
+Rank = 131st : Stable (1/0)
+Rank = 89th : Warning (1/0)
+Rank = 42nd : Warning (1/0)
+Rank = 26th : Alert (1/0)
+Rank = 103rd : Warning (1/0)
+Rank = 33rd : Alert (1/0)
+Rank = 166th : Sustainable (1/0)
+Rank = 176th : Sustainable (1/0)
+Rank = 71st : Warning (1/0)
+Rank = 19th : Alert (1/0)
+Rank = 13th : Alert (1/0)
+Rank = 30th : Alert (1/0)
+Rank = 177th : Sustainable (1/0)
+Rank = 14th : Alert (1/0)
+Rank = 133rd : Stable (1/0)
+Rank = 50th : Warning (1/0)
+Rank = 95th : Warning (1/0)
+Rank = 54th : Warning (1/0)
+Rank = 152nd : Sustainable (1/0)
+Rank = 163rd : Sustainable (1/0)
+Rank = 134th : Stable (1/0)
+Rank = 65th : Warning (1/0)
+Rank = 32nd : Alert (1/0)
+Rank = 110th : Warning (1/0)
+Rank = 94th : Warning (1/0)
+Rank = 97th : Warning (1/0)
+Rank = 59th : Warning (1/0)
+Rank = 125th : Stable (1/0)
+Rank = 34th : Alert (1/0)
+Rank = 161st : Sustainable (0/0)
+Rank = 144th : Stable (1/0)
+Rank = 160th : Sustainable (1/0)
+Rank = 52nd : Warning (1/0)
+Rank = 1st : Alert (1/0)
+Rank = 108th : Warning (1/0)
+Rank = 156th : Sustainable (1/0)
+Rank = 2nd : Alert (1/0)
+Rank = 153rd : Sustainable (1/0)
+Rank = 43rd : Warning (1/0)
+Rank = 4th : Alert (2/0)
+Rank = 112th : Warning (1/0)
+Rank = 171st : Sustainable (1/0)
+Rank = 174th : Sustainable (1/0)
+Rank = 6th : Alert (1/0)
+Rank = 62nd : Warning (1/0)
+Rank = 74th : Warning (1/0)
+Rank = 35th : Alert (1/0)
+Rank = 51st : Warning (1/0)
+Rank = 127th : Stable (1/0)
+Rank = 79th : Warning (1/0)
+Rank = 83rd : Warning (1/0)
+Rank = 23rd : Alert (1/0)
+Rank = 85th : Warning (1/0)
+Rank = 145th : Stable (1/0)
+Rank = 162nd : Sustainable (1/0)
+Rank = 159th : Sustainable (0/0)
+Rank = 155th : Sustainable (1/0)
+Rank = 60th : Warning (1/0)
+Rank = 63rd : Warning (1/0)
+Rank = 106th : Warning (1/0)
+Rank = 49th : Warning (1/0)
+Rank = 16th : Alert (1/0)
+
+Size of the tree : 167
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances          85               49.7076 %
+Incorrectly Classified Instances        86               50.2924 %
+Kappa statistic                          0.161 
+Mean absolute error                      0.2938
+Root mean squared error                  0.3946
+Relative absolute error                 84.0728 %
+Root relative squared error             94.4577 %
+Total Number of Instances              171     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.440    0.041    0.647      0.440    0.524      0.471    0.829     0.514     Sustainable
+                 0.059    0.044    0.250      0.059    0.095      0.028    0.601     0.255     Stable
+                 0.921    0.779    0.486      0.921    0.636      0.194    0.625     0.568     Warning
+                 0.056    0.000    1.000      0.056    0.105      0.211    0.718     0.395     Alert
+Weighted Avg.    0.497    0.361    0.571      0.497    0.401      0.205    0.670     0.462     
+
+=== Confusion Matrix ===
+
+  a  b  c  d   <-- classified as
+ 11  2 12  0 |  a = Sustainable
+  4  2 28  0 |  b = Stable
+  2  4 70  0 |  c = Warning
+  0  0 34  2 |  d = Alert
+

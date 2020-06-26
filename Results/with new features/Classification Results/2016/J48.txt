@@ -1,0 +1,102 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     fsi-2016_extended-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.unsupervised.attribute.InterquartileRange-Rfirst-last-O3.0-E6.0-weka.filters.unsupervised.attribute.InterquartileRange-Rfirst-last-O3.0-E6.0-P-weka.filters.unsupervised.attribute.Remove-R25-52,54-56,59-62,64-weka.filters.unsupervised.instance.RemoveWithValues-S0.0-C23-Llast-weka.filters.unsupervised.instance.RemoveWithValues-S0.0-C24-Llast-weka.filters.unsupervised.attribute.Discretize-B4-M-1.0-R4-precision6
+Instances:    171
+Attributes:   28
+              Country
+              Year
+              Rank
+              Total
+              C1: Security Apparatus
+              C2: Factionalized Elites
+              C3: Group Grievance
+              E1: Economy
+              E2: Economic Inequality
+              E3: Human Flight and Brain Drain
+              P1: State Legitimacy
+              P2: Public Services
+              P3: Human Rights
+              S1: Demographic Pressures
+              S2: Refugees and IDPs
+              X1: External Intervention
+              Domestic credit provided by financial sector
+              Education Index
+              Exports and Imports
+              Life Expectancy at Birth
+              Infant Mortality Rate
+              Unemployment
+              Outlier
+              ExtremeValue
+              Domestic credit provided by financial sector_Outlier
+              Exports and Imports_Outlier
+              Exports and Imports_ExtremeValue
+              Unemployment_Outlier
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+P3: Human Rights <= 3.3
+|   C1: Security Apparatus <= 3.1
+|   |   C3: Group Grievance <= 6.2: Sustainable (23.0)
+|   |   C3: Group Grievance > 6.2: Stable (3.0/1.0)
+|   C1: Security Apparatus > 3.1: Stable (7.0/1.0)
+P3: Human Rights > 3.3
+|   P2: Public Services <= 7
+|   |   C1: Security Apparatus <= 4.5: Stable (14.0)
+|   |   C1: Security Apparatus > 4.5
+|   |   |   S2: Refugees and IDPs <= 4.2
+|   |   |   |   E1: Economy <= 4.9: Stable (10.0/1.0)
+|   |   |   |   E1: Economy > 4.9
+|   |   |   |   |   C3: Group Grievance <= 4.3: Stable (4.0/1.0)
+|   |   |   |   |   C3: Group Grievance > 4.3: Warning (14.0)
+|   |   |   S2: Refugees and IDPs > 4.2: Warning (35.0)
+|   P2: Public Services > 7
+|   |   S2: Refugees and IDPs <= 7.5
+|   |   |   C2: Factionalized Elites <= 8.4
+|   |   |   |   Exports and Imports <= 59.4
+|   |   |   |   |   P1: State Legitimacy <= 6.9: Warning (3.0)
+|   |   |   |   |   P1: State Legitimacy > 6.9: Alert (2.0)
+|   |   |   |   Exports and Imports > 59.4: Warning (22.0)
+|   |   |   C2: Factionalized Elites > 8.4: Alert (3.0)
+|   |   S2: Refugees and IDPs > 7.5: Alert (31.0)
+
+Number of Leaves  : 	13
+
+Size of the tree : 	25
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         136               79.5322 %
+Incorrectly Classified Instances        35               20.4678 %
+Kappa statistic                          0.708 
+Mean absolute error                      0.1088
+Root mean squared error                  0.31  
+Relative absolute error                 31.1398 %
+Root relative squared error             74.2164 %
+Total Number of Instances              171     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.760    0.027    0.826      0.760    0.792      0.759    0.864     0.639     Sustainable
+                 0.735    0.102    0.641      0.735    0.685      0.602    0.820     0.508     Stable
+                 0.816    0.116    0.849      0.816    0.832      0.703    0.878     0.810     Warning
+                 0.833    0.044    0.833      0.833    0.833      0.789    0.925     0.856     Alert
+Weighted Avg.    0.795    0.085    0.801      0.795    0.797      0.709    0.874     0.735     
+
+=== Confusion Matrix ===
+
+  a  b  c  d   <-- classified as
+ 19  6  0  0 |  a = Sustainable
+  4 25  5  0 |  b = Stable
+  0  8 62  6 |  c = Warning
+  0  0  6 30 |  d = Alert
+

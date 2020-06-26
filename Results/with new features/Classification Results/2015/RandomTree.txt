@@ -1,0 +1,252 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     fsi-2015-extended-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.unsupervised.attribute.InterquartileRange-Rfirst-last-O3.0-E6.0-weka.filters.unsupervised.attribute.InterquartileRange-Rfirst-last-O3.0-E6.0-P-weka.filters.unsupervised.attribute.Remove-R25-54,56-58,61-66-weka.filters.unsupervised.instance.RemoveWithValues-S0.0-C23-Llast-weka.filters.unsupervised.instance.RemoveWithValues-S0.0-C24-Llast-weka.filters.unsupervised.attribute.Discretize-B4-M-1.0-R4-precision6
+Instances:    172
+Attributes:   27
+              ï»¿Country
+              Year
+              Rank
+              Total
+              C1: Security Apparatus
+              C2: Factionalized Elites
+              C3: Group Grievance
+              E1: Economy
+              E2: Economic Inequality
+              E3: Human Flight and Brain Drain
+              P1: State Legitimacy
+              P2: Public Services
+              P3: Human Rights
+              S1: Demographic Pressures
+              S2: Refugees and IDPs
+              X1: External Intervention
+              Domestic Credit provided by financial sector
+              Education Index
+              Exports and Imports
+              Life Expectancy at Birth
+              Infant Mortality Rate
+              Unemployment
+              Outlier
+              ExtremeValue
+              Domestic Credit provided by financial sector_Outlier
+              Exports and Imports_Outlier
+              Exports and Imports_ExtremeValue
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+
+RandomTree
+==========
+
+ï»¿Country = Afghanistan : Alert (1/0)
+ï»¿Country = Albania : Stable (1/0)
+ï»¿Country = Algeria : Warning (1/0)
+ï»¿Country = Angola : Warning (1/0)
+ï»¿Country = Antigua and Barbuda : Stable (1/0)
+ï»¿Country = Argentina : Stable (1/0)
+ï»¿Country = Armenia : Warning (1/0)
+ï»¿Country = Australia : Sustainable (1/0)
+ï»¿Country = Austria : Sustainable (1/0)
+ï»¿Country = Azerbaijan : Warning (1/0)
+ï»¿Country = Bahamas : Stable (1/0)
+ï»¿Country = Bahrain : Stable (1/0)
+ï»¿Country = Bangladesh : Alert (1/0)
+ï»¿Country = Barbados : Stable (1/0)
+ï»¿Country = Belarus : Warning (1/0)
+ï»¿Country = Belgium : Sustainable (1/0)
+ï»¿Country = Belize : Stable (1/0)
+ï»¿Country = Benin : Warning (1/0)
+ï»¿Country = Bhutan : Warning (1/0)
+ï»¿Country = Bolivia : Warning (1/0)
+ï»¿Country = Bosnia and Herzegovina : Warning (1/0)
+ï»¿Country = Botswana : Stable (1/0)
+ï»¿Country = Brazil : Stable (1/0)
+ï»¿Country = Brunei Darussalam : Stable (1/0)
+ï»¿Country = Bulgaria : Stable (1/0)
+ï»¿Country = Burkina Faso : Warning (1/0)
+ï»¿Country = Burundi : Alert (1/0)
+ï»¿Country = Cambodia : Warning (1/0)
+ï»¿Country = Cameroon : Alert (1/0)
+ï»¿Country = Canada : Sustainable (1/0)
+ï»¿Country = Cape Verde : Warning (1/0)
+ï»¿Country = Central African Republic : Alert (1/0)
+ï»¿Country = Chad : Alert (1/0)
+ï»¿Country = Chile : Sustainable (1/0)
+ï»¿Country = China : Warning (1/0)
+ï»¿Country = Colombia : Warning (1/0)
+ï»¿Country = Comoros : Warning (1/0)
+ï»¿Country = Congo Democratic Republic : Alert (1/0)
+ï»¿Country = Congo Republic : Alert (1/0)
+ï»¿Country = Costa Rica : Stable (1/0)
+ï»¿Country = Croatia : Stable (1/0)
+ï»¿Country = Cuba : Warning (1/0)
+ï»¿Country = Cyprus : Sustainable (0/0)
+ï»¿Country = Czech Republic : Sustainable (1/0)
+ï»¿Country = Denmark : Sustainable (1/0)
+ï»¿Country = Djibouti : Warning (1/0)
+ï»¿Country = Dominican Republic : Warning (1/0)
+ï»¿Country = Ecuador : Warning (1/0)
+ï»¿Country = Egypt : Warning (1/0)
+ï»¿Country = El Salvador : Warning (1/0)
+ï»¿Country = Equatorial Guinea : Warning (1/0)
+ï»¿Country = Eritrea : Alert (1/0)
+ï»¿Country = Estonia : Stable (1/0)
+ï»¿Country = Ethiopia : Alert (1/0)
+ï»¿Country = Fiji : Warning (1/0)
+ï»¿Country = Finland : Sustainable (1/0)
+ï»¿Country = France : Sustainable (1/0)
+ï»¿Country = Gabon : Warning (1/0)
+ï»¿Country = Gambia : Warning (1/0)
+ï»¿Country = Georgia : Warning (1/0)
+ï»¿Country = Germany : Sustainable (1/0)
+ï»¿Country = Ghana : Warning (1/0)
+ï»¿Country = Greece : Stable (1/0)
+ï»¿Country = Grenada : Stable (1/0)
+ï»¿Country = Guatemala : Warning (1/0)
+ï»¿Country = Guinea : Alert (1/0)
+ï»¿Country = Guinea Bissau : Alert (1/0)
+ï»¿Country = Guyana : Warning (1/0)
+ï»¿Country = Haiti : Alert (1/0)
+ï»¿Country = Honduras : Warning (1/0)
+ï»¿Country = Hungary : Stable (1/0)
+ï»¿Country = Iceland : Sustainable (1/0)
+ï»¿Country = India : Warning (1/0)
+ï»¿Country = Indonesia : Warning (1/0)
+ï»¿Country = Iran : Warning (1/0)
+ï»¿Country = Iraq : Alert (1/0)
+ï»¿Country = Ireland : Sustainable (1/0)
+ï»¿Country = Israel and West Bank : Warning (1/0)
+ï»¿Country = Italy : Stable (1/0)
+ï»¿Country = Jamaica : Stable (1/0)
+ï»¿Country = Japan : Sustainable (0/0)
+ï»¿Country = Jordan : Warning (1/0)
+ï»¿Country = Kazakhstan : Warning (1/0)
+ï»¿Country = Kenya : Alert (1/0)
+ï»¿Country = Kuwait : Stable (1/0)
+ï»¿Country = Kyrgyz Republic : Warning (1/0)
+ï»¿Country = Laos : Warning (1/0)
+ï»¿Country = Latvia : Stable (1/0)
+ï»¿Country = Lebanon : Warning (1/0)
+ï»¿Country = Lesotho : Warning (1/0)
+ï»¿Country = Liberia : Alert (1/0)
+ï»¿Country = Libya : Alert (1/0)
+ï»¿Country = Lithuania : Stable (1/0)
+ï»¿Country = Luxembourg : Sustainable (0/0)
+ï»¿Country = Macedonia : Stable (1/0)
+ï»¿Country = Madagascar : Warning (1/0)
+ï»¿Country = Malawi : Warning (1/0)
+ï»¿Country = Malaysia : Stable (1/0)
+ï»¿Country = Maldives : Warning (1/0)
+ï»¿Country = Mali : Alert (1/0)
+ï»¿Country = Malta : Sustainable (0/0)
+ï»¿Country = Mauritania : Alert (1/0)
+ï»¿Country = Mauritius : Stable (1/0)
+ï»¿Country = Mexico : Warning (1/0)
+ï»¿Country = Micronesia : Warning (1/0)
+ï»¿Country = Moldova : Warning (1/0)
+ï»¿Country = Mongolia : Stable (1/0)
+ï»¿Country = Montenegro : Stable (1/0)
+ï»¿Country = Morocco : Warning (1/0)
+ï»¿Country = Mozambique : Warning (1/0)
+ï»¿Country = Myanmar : Alert (1/0)
+ï»¿Country = Namibia : Warning (1/0)
+ï»¿Country = Nepal : Alert (1/0)
+ï»¿Country = Netherlands : Sustainable (1/0)
+ï»¿Country = New Zealand : Sustainable (1/0)
+ï»¿Country = Nicaragua : Warning (1/0)
+ï»¿Country = Niger : Alert (1/0)
+ï»¿Country = Nigeria : Alert (1/0)
+ï»¿Country = North Korea : Alert (1/0)
+ï»¿Country = Norway : Sustainable (1/0)
+ï»¿Country = Oman : Stable (1/0)
+ï»¿Country = Pakistan : Alert (1/0)
+ï»¿Country = Panama : Stable (1/0)
+ï»¿Country = Papua New Guinea : Warning (1/0)
+ï»¿Country = Paraguay : Warning (1/0)
+ï»¿Country = Peru : Warning (1/0)
+ï»¿Country = Philippines : Warning (1/0)
+ï»¿Country = Poland : Sustainable (1/0)
+ï»¿Country = Portugal : Sustainable (1/0)
+ï»¿Country = Qatar : Stable (1/0)
+ï»¿Country = Romania : Stable (1/0)
+ï»¿Country = Russia : Warning (1/0)
+ï»¿Country = Rwanda : Warning (1/0)
+ï»¿Country = Samoa : Warning (1/0)
+ï»¿Country = Sao Tome and Principe : Warning (1/0)
+ï»¿Country = Saudi Arabia : Warning (1/0)
+ï»¿Country = Senegal : Warning (1/0)
+ï»¿Country = Serbia : Warning (1/0)
+ï»¿Country = Seychelles : Stable (1/0)
+ï»¿Country = Sierra Leone : Alert (1/0)
+ï»¿Country = Singapore : Sustainable (0/0)
+ï»¿Country = Slovak Republic : Stable (1/0)
+ï»¿Country = Slovenia : Sustainable (1/0)
+ï»¿Country = Solomon Islands : Warning (1/0)
+ï»¿Country = Somalia : Alert (1/0)
+ï»¿Country = South Africa : Warning (1/0)
+ï»¿Country = South Korea : Sustainable (1/0)
+ï»¿Country = South Sudan : Alert (1/0)
+ï»¿Country = Spain : Sustainable (1/0)
+ï»¿Country = Sri Lanka : Alert (1/0)
+ï»¿Country = Sudan : Alert (1/0)
+ï»¿Country = Suriname : Warning (1/0)
+ï»¿Country = Swaziland : Warning (1/0)
+ï»¿Country = Sweden : Sustainable (1/0)
+ï»¿Country = Switzerland : Sustainable (1/0)
+ï»¿Country = Syria : Alert (1/0)
+ï»¿Country = Tajikistan : Warning (1/0)
+ï»¿Country = Tanzania : Warning (1/0)
+ï»¿Country = Thailand : Warning (1/0)
+ï»¿Country = Timor-Leste : Alert (1/0)
+ï»¿Country = Togo : Warning (1/0)
+ï»¿Country = Trinidad and Tobago : Stable (1/0)
+ï»¿Country = Tunisia : Warning (1/0)
+ï»¿Country = Turkey : Warning (1/0)
+ï»¿Country = Turkmenistan : Warning (1/0)
+ï»¿Country = Uganda : Alert (1/0)
+ï»¿Country = Ukraine : Warning (1/0)
+ï»¿Country = United Arab Emirates : Stable (1/0)
+ï»¿Country = United Kingdom : Sustainable (1/0)
+ï»¿Country = United States : Sustainable (1/0)
+ï»¿Country = Uruguay : Sustainable (1/0)
+ï»¿Country = Uzbekistan : Warning (1/0)
+ï»¿Country = Venezuela : Warning (1/0)
+ï»¿Country = Vietnam : Warning (1/0)
+ï»¿Country = Yemen : Alert (1/0)
+ï»¿Country = Zambia : Warning (1/0)
+ï»¿Country = Zimbabwe : Alert (1/0)
+
+Size of the tree : 178
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         131               76.1628 %
+Incorrectly Classified Instances        41               23.8372 %
+Kappa statistic                          0.6412
+Mean absolute error                      0.1501
+Root mean squared error                  0.3029
+Relative absolute error                 43.0614 %
+Root relative squared error             72.6022 %
+Total Number of Instances              172     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.720    0.048    0.720      0.720    0.720      0.672    0.920     0.721     Sustainable
+                 0.514    0.051    0.720      0.514    0.600      0.529    0.865     0.637     Stable
+                 0.948    0.274    0.737      0.948    0.830      0.678    0.903     0.856     Warning
+                 0.629    0.007    0.957      0.629    0.759      0.735    0.884     0.760     Alert
+Weighted Avg.    0.762    0.141    0.776      0.762    0.752      0.659    0.894     0.773     
+
+=== Confusion Matrix ===
+
+  a  b  c  d   <-- classified as
+ 18  4  3  0 |  a = Sustainable
+  7 18 10  0 |  b = Stable
+  0  3 73  1 |  c = Warning
+  0  0 13 22 |  d = Alert
+

@@ -1,0 +1,88 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.K2 -- -P 1 -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+Relation:     fsi-2015-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.unsupervised.attribute.InterquartileRange-Rfirst-last-O3.0-E6.0-weka.filters.unsupervised.attribute.InterquartileRange-Rfirst-last-O3.0-E6.0-P-weka.filters.unsupervised.attribute.Remove-R19-46-weka.filters.unsupervised.attribute.Discretize-B4-M-1.0-R4-precision6
+Instances:    177
+Attributes:   18
+              Country
+              Year
+              Rank
+              Total
+              C1: Security Apparatus
+              C2: Factionalized Elites
+              C3: Group Grievance
+              E1: Economy
+              E2: Economic Inequality
+              E3: Human Flight and Brain Drain
+              P1: State Legitimacy
+              P2: Public Services
+              P3: Human Rights
+              S1: Demographic Pressures
+              S2: Refugees and IDPs
+              X1: External Intervention
+              Outlier
+              ExtremeValue
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Bayes Network Classifier
+not using ADTree
+#attributes=18 #classindex=3
+Network structure (nodes followed by parents)
+Country(177): Total 
+Year(1): Total 
+Rank(163): Total 
+Total(4): 
+C1: Security Apparatus(4): Total 
+C2: Factionalized Elites(5): Total 
+C3: Group Grievance(4): Total 
+E1: Economy(4): Total 
+E2: Economic Inequality(4): Total 
+E3: Human Flight and Brain Drain(4): Total 
+P1: State Legitimacy(5): Total 
+P2: Public Services(4): Total 
+P3: Human Rights(4): Total 
+S1: Demographic Pressures(4): Total 
+S2: Refugees and IDPs(4): Total 
+X1: External Intervention(5): Total 
+Outlier(2): Total 
+ExtremeValue(2): Total 
+LogScore Bayes: -3983.4615117004646
+LogScore BDeu: -14809.139788742046
+LogScore MDL: -11184.936225511667
+LogScore ENTROPY: -7253.650503621832
+LogScore AIC: -8772.650503621833
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         159               89.8305 %
+Incorrectly Classified Instances        18               10.1695 %
+Kappa statistic                          0.8533
+Mean absolute error                      0.0573
+Root mean squared error                  0.2092
+Relative absolute error                 16.33   %
+Root relative squared error             49.9696 %
+Total Number of Instances              177     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.862    0.007    0.962      0.862    0.909      0.894    0.996     0.981     Sustainable
+                 0.886    0.056    0.795      0.886    0.838      0.797    0.978     0.923     Stable
+                 0.949    0.091    0.892      0.949    0.919      0.853    0.983     0.978     Warning
+                 0.829    0.000    1.000      0.829    0.906      0.892    0.995     0.984     Alert
+Weighted Avg.    0.898    0.052    0.905      0.898    0.899      0.857    0.986     0.969     
+
+=== Confusion Matrix ===
+
+  a  b  c  d   <-- classified as
+ 25  4  0  0 |  a = Sustainable
+  1 31  3  0 |  b = Stable
+  0  4 74  0 |  c = Warning
+  0  0  6 29 |  d = Alert
+

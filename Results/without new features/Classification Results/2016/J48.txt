@@ -1,0 +1,96 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     fsi-2016-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.unsupervised.attribute.InterquartileRange-Rfirst-last-O3.0-E6.0-weka.filters.unsupervised.attribute.Discretize-B4-M-1.0-R4-precision6
+Instances:    177
+Attributes:   18
+              Country
+              Year
+              Rank
+              Total
+              C1: Security Apparatus
+              C2: Factionalized Elites
+              C3: Group Grievance
+              E1: Economy
+              E2: Economic Inequality
+              E3: Human Flight and Brain Drain
+              P1: State Legitimacy
+              P2: Public Services
+              P3: Human Rights
+              S1: Demographic Pressures
+              S2: Refugees and IDPs
+              X1: External Intervention
+              Outlier
+              ExtremeValue
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+C1: Security Apparatus <= 4.4
+|   C1: Security Apparatus <= 3.5
+|   |   X1: External Intervention <= 2.5: Sustainable (22.0)
+|   |   X1: External Intervention > 2.5
+|   |   |   E2: Economic Inequality <= 3.2: Sustainable (6.0)
+|   |   |   E2: Economic Inequality > 3.2
+|   |   |   |   C2: Factionalized Elites <= 3.1: Sustainable (2.0)
+|   |   |   |   C2: Factionalized Elites > 3.1: Stable (9.0)
+|   C1: Security Apparatus > 3.5: Stable (15.0/1.0)
+C1: Security Apparatus > 4.4
+|   S2: Refugees and IDPs <= 7.2
+|   |   E1: Economy <= 4.8
+|   |   |   S2: Refugees and IDPs <= 4: Stable (8.0)
+|   |   |   S2: Refugees and IDPs > 4: Warning (6.0/1.0)
+|   |   E1: Economy > 4.8
+|   |   |   C2: Factionalized Elites <= 5.6
+|   |   |   |   P2: Public Services <= 6.1: Stable (4.0/1.0)
+|   |   |   |   P2: Public Services > 6.1: Warning (6.0)
+|   |   |   C2: Factionalized Elites > 5.6
+|   |   |   |   X1: External Intervention <= 8.9: Warning (52.0/1.0)
+|   |   |   |   X1: External Intervention > 8.9: Alert (2.0)
+|   S2: Refugees and IDPs > 7.2
+|   |   P2: Public Services <= 6.6: Warning (10.0)
+|   |   P2: Public Services > 6.6
+|   |   |   S2: Refugees and IDPs <= 7.5
+|   |   |   |   E2: Economic Inequality <= 8.3: Warning (2.0)
+|   |   |   |   E2: Economic Inequality > 8.3: Alert (2.0)
+|   |   |   S2: Refugees and IDPs > 7.5: Alert (31.0)
+
+Number of Leaves  : 	15
+
+Size of the tree : 	29
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         140               79.096  %
+Incorrectly Classified Instances        37               20.904  %
+Kappa statistic                          0.7029
+Mean absolute error                      0.1096
+Root mean squared error                  0.3063
+Relative absolute error                 30.9677 %
+Root relative squared error             72.8525 %
+Total Number of Instances              177     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.733    0.034    0.815      0.733    0.772      0.730    0.944     0.785     Sustainable
+                 0.686    0.120    0.585      0.686    0.632      0.534    0.810     0.502     Stable
+                 0.855    0.129    0.833      0.855    0.844      0.724    0.878     0.801     Warning
+                 0.806    0.014    0.935      0.806    0.866      0.838    0.925     0.874     Alert
+Weighted Avg.    0.791    0.088    0.802      0.791    0.794      0.711    0.885     0.754     
+
+=== Confusion Matrix ===
+
+  a  b  c  d   <-- classified as
+ 22  8  0  0 |  a = Sustainable
+  5 24  6  0 |  b = Stable
+  0  9 65  2 |  c = Warning
+  0  0  7 29 |  d = Alert
+

@@ -1,0 +1,88 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.K2 -- -P 1 -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+Relation:     fsi-2014-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.unsupervised.attribute.InterquartileRange-Rfirst-last-O3.0-E6.0-weka.filters.unsupervised.attribute.Discretize-B4-M-1.0-R4-precision6
+Instances:    177
+Attributes:   18
+              Country
+              Year
+              Rank
+              Total
+              C1: Security Apparatus
+              C2: Factionalized Elites
+              C3: Group Grievance
+              E1: Economy
+              E2: Economic Inequality
+              E3: Human Flight and Brain Drain
+              P1: State Legitimacy
+              P2: Public Services
+              P3: Human Rights
+              S1: Demographic Pressures
+              S2: Refugees and IDPs
+              X1: External Intervention
+              Outlier
+              ExtremeValue
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Bayes Network Classifier
+not using ADTree
+#attributes=18 #classindex=3
+Network structure (nodes followed by parents)
+Country(177): Total 
+Year(1): Total 
+Rank(4): Total 
+Total(4): 
+C1: Security Apparatus(4): Total 
+C2: Factionalized Elites(5): Total 
+C3: Group Grievance(4): Total 
+E1: Economy(4): Total 
+E2: Economic Inequality(4): Total 
+E3: Human Flight and Brain Drain(3): Total 
+P1: State Legitimacy(4): Total 
+P2: Public Services(4): Total 
+P3: Human Rights(4): Total 
+S1: Demographic Pressures(4): Total 
+S2: Refugees and IDPs(5): Total 
+X1: External Intervention(4): Total 
+Outlier(2): Total 
+ExtremeValue(2): Total 
+LogScore Bayes: -2967.401060925386
+LogScore BDeu: -8845.936268568328
+LogScore MDL: -6955.706077321497
+LogScore ENTROPY: -4691.140569320451
+LogScore AIC: -5566.14056932045
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         169               95.4802 %
+Incorrectly Classified Instances         8                4.5198 %
+Kappa statistic                          0.9346
+Mean absolute error                      0.0218
+Root mean squared error                  0.125 
+Relative absolute error                  6.2631 %
+Root relative squared error             29.995  %
+Total Number of Instances              177     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.963    0.007    0.963      0.963    0.963      0.956    0.996     0.984     Sustainable
+                 0.912    0.014    0.939      0.912    0.925      0.908    0.991     0.956     Stable
+                 0.975    0.041    0.951      0.975    0.963      0.932    0.997     0.997     Warning
+                 0.944    0.007    0.971      0.944    0.958      0.947    1.000     0.998     Alert
+Weighted Avg.    0.955    0.024    0.955      0.955    0.955      0.934    0.997     0.987     
+
+=== Confusion Matrix ===
+
+  a  b  c  d   <-- classified as
+ 26  1  0  0 |  a = Sustainable
+  1 31  2  0 |  b = Stable
+  0  1 78  1 |  c = Warning
+  0  0  2 34 |  d = Alert
+

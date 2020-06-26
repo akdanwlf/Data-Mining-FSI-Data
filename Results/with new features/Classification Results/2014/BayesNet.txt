@@ -1,0 +1,104 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.K2 -- -P 1 -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+Relation:     fsi-2014_extended-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.unsupervised.attribute.InterquartileRange-Rfirst-last-O3.0-E6.0-weka.filters.unsupervised.attribute.InterquartileRange-Rfirst-last-O3.0-E6.0-P-weka.filters.unsupervised.attribute.Remove-R25-54,56-58,60-66-weka.filters.unsupervised.instance.RemoveWithValues-S0.0-C23-Llast-weka.filters.unsupervised.attribute.Discretize-B4-M-1.0-R4-precision6
+Instances:    171
+Attributes:   26
+              Country
+              Year
+              Rank
+              Total
+              C1: Security Apparatus
+              C2: Factionalized Elites
+              C3: Group Grievance
+              E1: Economy
+              E2: Economic Inequality
+              E3: Human Flight and Brain Drain
+              P1: State Legitimacy
+              P2: Public Services
+              P3: Human Rights
+              S1: Demographic Pressures
+              S2: Refugees and IDPs
+              X1: External Intervention
+              Domestic Credit provided by financial sector
+              Education Index
+              Exports and Imports
+              Life Expectancy at Birth
+              Infant Mortality Rate
+              Unemployment
+              Outlier
+              ExtremeValue
+              Domestic Credit provided by financial sector_Outlier
+              Exports and Imports_Outlier
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Bayes Network Classifier
+not using ADTree
+#attributes=26 #classindex=3
+Network structure (nodes followed by parents)
+Country(177): Total 
+Year(1): Total 
+Rank(4): Total 
+Total(4): 
+C1: Security Apparatus(4): Total 
+C2: Factionalized Elites(4): Total 
+C3: Group Grievance(4): Total 
+E1: Economy(4): Total 
+E2: Economic Inequality(4): Total 
+E3: Human Flight and Brain Drain(3): Total 
+P1: State Legitimacy(4): Total 
+P2: Public Services(4): Total 
+P3: Human Rights(5): Total 
+S1: Demographic Pressures(5): Total 
+S2: Refugees and IDPs(5): Total 
+X1: External Intervention(4): Total 
+Domestic Credit provided by financial sector(3): Total 
+Education Index(3): Total 
+Exports and Imports(2): Total 
+Life Expectancy at Birth(4): Total 
+Infant Mortality Rate(4): Total 
+Unemployment(1): Total 
+Outlier(2): Total 
+ExtremeValue(2): Total 
+Domestic Credit provided by financial sector_Outlier(2): Total 
+Exports and Imports_Outlier(2): Total 
+LogScore Bayes: -3600.5011421050335
+LogScore BDeu: -9605.358403453425
+LogScore MDL: -7714.041183749018
+LogScore ENTROPY: -5320.596798197023
+LogScore AIC: -6251.596798197025
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         164               95.9064 %
+Incorrectly Classified Instances         7                4.0936 %
+Kappa statistic                          0.94  
+Mean absolute error                      0.022 
+Root mean squared error                  0.1303
+Relative absolute error                  6.39   %
+Root relative squared error             31.4323 %
+Total Number of Instances              171     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.957    0.007    0.957      0.957    0.957      0.950    0.999     0.993     Sustainable
+                 0.879    0.007    0.967      0.879    0.921      0.904    0.991     0.972     Stable
+                 0.987    0.043    0.951      0.987    0.969      0.942    0.992     0.987     Warning
+                 0.972    0.007    0.972      0.972    0.972      0.965    0.999     0.998     Alert
+Weighted Avg.    0.959    0.024    0.959      0.959    0.959      0.941    0.994     0.987     
+
+=== Confusion Matrix ===
+
+  a  b  c  d   <-- classified as
+ 22  1  0  0 |  a = Sustainable
+  1 29  3  0 |  b = Stable
+  0  0 78  1 |  c = Warning
+  0  0  1 35 |  d = Alert
+

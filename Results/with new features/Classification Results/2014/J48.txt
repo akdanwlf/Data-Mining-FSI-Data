@@ -1,0 +1,82 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     fsi-2014_extended-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.unsupervised.attribute.InterquartileRange-Rfirst-last-O3.0-E6.0-weka.filters.unsupervised.attribute.InterquartileRange-Rfirst-last-O3.0-E6.0-P-weka.filters.unsupervised.attribute.Remove-R25-54,56-58,60-66-weka.filters.unsupervised.instance.RemoveWithValues-S0.0-C23-Llast-weka.filters.unsupervised.attribute.Discretize-B4-M-1.0-R4-precision6
+Instances:    171
+Attributes:   26
+              Country
+              Year
+              Rank
+              Total
+              C1: Security Apparatus
+              C2: Factionalized Elites
+              C3: Group Grievance
+              E1: Economy
+              E2: Economic Inequality
+              E3: Human Flight and Brain Drain
+              P1: State Legitimacy
+              P2: Public Services
+              P3: Human Rights
+              S1: Demographic Pressures
+              S2: Refugees and IDPs
+              X1: External Intervention
+              Domestic Credit provided by financial sector
+              Education Index
+              Exports and Imports
+              Life Expectancy at Birth
+              Infant Mortality Rate
+              Unemployment
+              Outlier
+              ExtremeValue
+              Domestic Credit provided by financial sector_Outlier
+              Exports and Imports_Outlier
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+Rank <= 117
+|   Rank <= 37: Alert (36.0)
+|   Rank > 37: Warning (79.0)
+Rank > 117
+|   Rank <= 150: Stable (33.0)
+|   Rank > 150: Sustainable (23.0)
+
+Number of Leaves  : 	4
+
+Size of the tree : 	7
+
+
+Time taken to build model: 0.02 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         168               98.2456 %
+Incorrectly Classified Instances         3                1.7544 %
+Kappa statistic                          0.9745
+Mean absolute error                      0.0088
+Root mean squared error                  0.0937
+Relative absolute error                  2.5471 %
+Root relative squared error             22.5909 %
+Total Number of Instances              171     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.007    0.958      1.000    0.979      0.976    0.997     0.958     Sustainable
+                 0.970    0.007    0.970      0.970    0.970      0.962    0.981     0.946     Stable
+                 0.987    0.011    0.987      0.987    0.987      0.976    0.988     0.981     Warning
+                 0.972    0.000    1.000      0.972    0.986      0.982    0.986     0.978     Alert
+Weighted Avg.    0.982    0.007    0.983      0.982    0.982      0.975    0.988     0.970     
+
+=== Confusion Matrix ===
+
+  a  b  c  d   <-- classified as
+ 23  0  0  0 |  a = Sustainable
+  1 32  0  0 |  b = Stable
+  0  1 78  0 |  c = Warning
+  0  0  1 35 |  d = Alert
+

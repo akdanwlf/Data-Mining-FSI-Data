@@ -1,0 +1,466 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     fsi-2014_extended-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.unsupervised.attribute.InterquartileRange-Rfirst-last-O3.0-E6.0-weka.filters.unsupervised.attribute.InterquartileRange-Rfirst-last-O3.0-E6.0-P-weka.filters.unsupervised.attribute.Remove-R25-54,56-58,60-66-weka.filters.unsupervised.instance.RemoveWithValues-S0.0-C23-Llast-weka.filters.unsupervised.attribute.Discretize-B4-M-1.0-R4-precision6
+Instances:    171
+Attributes:   26
+              Country
+              Year
+              Rank
+              Total
+              C1: Security Apparatus
+              C2: Factionalized Elites
+              C3: Group Grievance
+              E1: Economy
+              E2: Economic Inequality
+              E3: Human Flight and Brain Drain
+              P1: State Legitimacy
+              P2: Public Services
+              P3: Human Rights
+              S1: Demographic Pressures
+              S2: Refugees and IDPs
+              X1: External Intervention
+              Domestic Credit provided by financial sector
+              Education Index
+              Exports and Imports
+              Life Expectancy at Birth
+              Infant Mortality Rate
+              Unemployment
+              Outlier
+              ExtremeValue
+              Domestic Credit provided by financial sector_Outlier
+              Exports and Imports_Outlier
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+
+RandomTree
+==========
+
+S1: Demographic Pressures < 4.65
+|   P3: Human Rights < 2.95
+|   |   P1: State Legitimacy < 3.05 : Sustainable (20/0)
+|   |   P1: State Legitimacy >= 3.05
+|   |   |   Rank < 151 : Stable (6/0)
+|   |   |   Rank >= 151 : Sustainable (2/0)
+|   P3: Human Rights >= 2.95
+|   |   C2: Factionalized Elites < 6.65
+|   |   |   P1: State Legitimacy < 3.5 : Sustainable (1/0)
+|   |   |   P1: State Legitimacy >= 3.5 : Stable (13/0)
+|   |   C2: Factionalized Elites >= 6.65
+|   |   |   E3: Human Flight and Brain Drain < 4.95 : Stable (1/0)
+|   |   |   E3: Human Flight and Brain Drain >= 4.95 : Warning (4/0)
+S1: Demographic Pressures >= 4.65
+|   C1: Security Apparatus < 7.25
+|   |   E1: Economy < 5
+|   |   |   S2: Refugees and IDPs < 4.25
+|   |   |   |   Education Index < 0.52 : Warning (1/0)
+|   |   |   |   Education Index >= 0.52 : Stable (10/0)
+|   |   |   S2: Refugees and IDPs >= 4.25 : Warning (8/0)
+|   |   E1: Economy >= 5
+|   |   |   Rank < 37.5 : Alert (4/0)
+|   |   |   Rank >= 37.5
+|   |   |   |   P1: State Legitimacy < 6.25
+|   |   |   |   |   S1: Demographic Pressures < 5.55 : Stable (2/0)
+|   |   |   |   |   S1: Demographic Pressures >= 5.55
+|   |   |   |   |   |   Country = Afghanistan : Sustainable (0/0)
+|   |   |   |   |   |   Country = Albania : Sustainable (0/0)
+|   |   |   |   |   |   Country = Algeria : Sustainable (0/0)
+|   |   |   |   |   |   Country = Angola : Sustainable (0/0)
+|   |   |   |   |   |   Country = Antigua and Barbuda : Sustainable (0/0)
+|   |   |   |   |   |   Country = Argentina : Sustainable (0/0)
+|   |   |   |   |   |   Country = Armenia : Sustainable (0/0)
+|   |   |   |   |   |   Country = Australia : Sustainable (0/0)
+|   |   |   |   |   |   Country = Austria : Sustainable (0/0)
+|   |   |   |   |   |   Country = Azerbaijan : Sustainable (0/0)
+|   |   |   |   |   |   Country = Bahamas : Sustainable (0/0)
+|   |   |   |   |   |   Country = Bahrain : Sustainable (0/0)
+|   |   |   |   |   |   Country = Bangladesh : Sustainable (0/0)
+|   |   |   |   |   |   Country = Barbados : Sustainable (0/0)
+|   |   |   |   |   |   Country = Belarus : Sustainable (0/0)
+|   |   |   |   |   |   Country = Belgium : Sustainable (0/0)
+|   |   |   |   |   |   Country = Belize : Warning (1/0)
+|   |   |   |   |   |   Country = Benin : Warning (1/0)
+|   |   |   |   |   |   Country = Bhutan : Warning (1/0)
+|   |   |   |   |   |   Country = Bolivia : Sustainable (0/0)
+|   |   |   |   |   |   Country = Bosnia and Herzegovina : Sustainable (0/0)
+|   |   |   |   |   |   Country = Botswana : Stable (1/0)
+|   |   |   |   |   |   Country = Brazil : Sustainable (0/0)
+|   |   |   |   |   |   Country = Brunei Darussalam : Sustainable (0/0)
+|   |   |   |   |   |   Country = Bulgaria : Sustainable (0/0)
+|   |   |   |   |   |   Country = Burkina Faso : Sustainable (0/0)
+|   |   |   |   |   |   Country = Burundi : Sustainable (0/0)
+|   |   |   |   |   |   Country = Cambodia : Sustainable (0/0)
+|   |   |   |   |   |   Country = Cameroon : Sustainable (0/0)
+|   |   |   |   |   |   Country = Canada : Sustainable (0/0)
+|   |   |   |   |   |   Country = Cape Verde : Warning (1/0)
+|   |   |   |   |   |   Country = Central African Republic : Sustainable (0/0)
+|   |   |   |   |   |   Country = Chad : Sustainable (0/0)
+|   |   |   |   |   |   Country = Chile : Sustainable (0/0)
+|   |   |   |   |   |   Country = China : Sustainable (0/0)
+|   |   |   |   |   |   Country = Colombia : Sustainable (0/0)
+|   |   |   |   |   |   Country = Comoros : Sustainable (0/0)
+|   |   |   |   |   |   Country = Congo Democratic Republic : Sustainable (0/0)
+|   |   |   |   |   |   Country = Congo Republic : Sustainable (0/0)
+|   |   |   |   |   |   Country = Costa Rica : Sustainable (0/0)
+|   |   |   |   |   |   Country = Croatia : Sustainable (0/0)
+|   |   |   |   |   |   Country = Cuba : Sustainable (0/0)
+|   |   |   |   |   |   Country = Cyprus : Sustainable (0/0)
+|   |   |   |   |   |   Country = Czech Republic : Sustainable (0/0)
+|   |   |   |   |   |   Country = Denmark : Sustainable (0/0)
+|   |   |   |   |   |   Country = Djibouti : Sustainable (0/0)
+|   |   |   |   |   |   Country = Dominican Republic : Warning (1/0)
+|   |   |   |   |   |   Country = Ecuador : Sustainable (0/0)
+|   |   |   |   |   |   Country = Egypt : Sustainable (0/0)
+|   |   |   |   |   |   Country = El Salvador : Warning (1/0)
+|   |   |   |   |   |   Country = Equatorial Guinea : Sustainable (0/0)
+|   |   |   |   |   |   Country = Eritrea : Sustainable (0/0)
+|   |   |   |   |   |   Country = Estonia : Sustainable (0/0)
+|   |   |   |   |   |   Country = Ethiopia : Sustainable (0/0)
+|   |   |   |   |   |   Country = Fiji : Sustainable (0/0)
+|   |   |   |   |   |   Country = Finland : Sustainable (0/0)
+|   |   |   |   |   |   Country = France : Sustainable (0/0)
+|   |   |   |   |   |   Country = Gabon : Sustainable (0/0)
+|   |   |   |   |   |   Country = Gambia : Sustainable (0/0)
+|   |   |   |   |   |   Country = Georgia : Sustainable (0/0)
+|   |   |   |   |   |   Country = Germany : Sustainable (0/0)
+|   |   |   |   |   |   Country = Ghana : Warning (1/0)
+|   |   |   |   |   |   Country = Greece : Sustainable (0/0)
+|   |   |   |   |   |   Country = Grenada : Sustainable (0/0)
+|   |   |   |   |   |   Country = Guatemala : Sustainable (0/0)
+|   |   |   |   |   |   Country = Guinea : Sustainable (0/0)
+|   |   |   |   |   |   Country = Guinea Bissau : Sustainable (0/0)
+|   |   |   |   |   |   Country = Guyana : Warning (1/0)
+|   |   |   |   |   |   Country = Haiti : Sustainable (0/0)
+|   |   |   |   |   |   Country = Honduras : Sustainable (0/0)
+|   |   |   |   |   |   Country = Hungary : Sustainable (0/0)
+|   |   |   |   |   |   Country = Iceland : Sustainable (0/0)
+|   |   |   |   |   |   Country = India : Sustainable (0/0)
+|   |   |   |   |   |   Country = Indonesia : Sustainable (0/0)
+|   |   |   |   |   |   Country = Iran : Sustainable (0/0)
+|   |   |   |   |   |   Country = Iraq : Sustainable (0/0)
+|   |   |   |   |   |   Country = Ireland : Sustainable (0/0)
+|   |   |   |   |   |   Country = Israel and West Bank : Sustainable (0/0)
+|   |   |   |   |   |   Country = Italy : Sustainable (0/0)
+|   |   |   |   |   |   Country = Jamaica : Sustainable (0/0)
+|   |   |   |   |   |   Country = Japan : Sustainable (0/0)
+|   |   |   |   |   |   Country = Jordan : Sustainable (0/0)
+|   |   |   |   |   |   Country = Kazakhstan : Sustainable (0/0)
+|   |   |   |   |   |   Country = Kenya : Sustainable (0/0)
+|   |   |   |   |   |   Country = Kuwait : Sustainable (0/0)
+|   |   |   |   |   |   Country = Kyrgyz Republic : Sustainable (0/0)
+|   |   |   |   |   |   Country = Laos : Sustainable (0/0)
+|   |   |   |   |   |   Country = Latvia : Sustainable (0/0)
+|   |   |   |   |   |   Country = Lebanon : Sustainable (0/0)
+|   |   |   |   |   |   Country = Lesotho : Warning (1/0)
+|   |   |   |   |   |   Country = Liberia : Sustainable (0/0)
+|   |   |   |   |   |   Country = Libya : Sustainable (0/0)
+|   |   |   |   |   |   Country = Lithuania : Sustainable (0/0)
+|   |   |   |   |   |   Country = Luxembourg : Sustainable (0/0)
+|   |   |   |   |   |   Country = Macedonia : Sustainable (0/0)
+|   |   |   |   |   |   Country = Madagascar : Sustainable (0/0)
+|   |   |   |   |   |   Country = Malawi : Sustainable (0/0)
+|   |   |   |   |   |   Country = Malaysia : Sustainable (0/0)
+|   |   |   |   |   |   Country = Maldives : Sustainable (0/0)
+|   |   |   |   |   |   Country = Mali : Sustainable (0/0)
+|   |   |   |   |   |   Country = Malta : Sustainable (0/0)
+|   |   |   |   |   |   Country = Mauritania : Sustainable (0/0)
+|   |   |   |   |   |   Country = Mauritius : Sustainable (0/0)
+|   |   |   |   |   |   Country = Mexico : Sustainable (0/0)
+|   |   |   |   |   |   Country = Micronesia : Sustainable (0/0)
+|   |   |   |   |   |   Country = Moldova : Sustainable (0/0)
+|   |   |   |   |   |   Country = Mongolia : Sustainable (0/0)
+|   |   |   |   |   |   Country = Montenegro : Sustainable (0/0)
+|   |   |   |   |   |   Country = Morocco : Sustainable (0/0)
+|   |   |   |   |   |   Country = Mozambique : Sustainable (0/0)
+|   |   |   |   |   |   Country = Myanmar : Sustainable (0/0)
+|   |   |   |   |   |   Country = Namibia : Warning (1/0)
+|   |   |   |   |   |   Country = Nepal : Sustainable (0/0)
+|   |   |   |   |   |   Country = Netherlands : Sustainable (0/0)
+|   |   |   |   |   |   Country = New Zealand : Sustainable (0/0)
+|   |   |   |   |   |   Country = Nicaragua : Sustainable (0/0)
+|   |   |   |   |   |   Country = Niger : Sustainable (0/0)
+|   |   |   |   |   |   Country = Nigeria : Sustainable (0/0)
+|   |   |   |   |   |   Country = North Korea : Sustainable (0/0)
+|   |   |   |   |   |   Country = Norway : Sustainable (0/0)
+|   |   |   |   |   |   Country = Oman : Sustainable (0/0)
+|   |   |   |   |   |   Country = Pakistan : Sustainable (0/0)
+|   |   |   |   |   |   Country = Panama : Sustainable (0/0)
+|   |   |   |   |   |   Country = Papua New Guinea : Sustainable (0/0)
+|   |   |   |   |   |   Country = Paraguay : Sustainable (0/0)
+|   |   |   |   |   |   Country = Peru : Sustainable (0/0)
+|   |   |   |   |   |   Country = Philippines : Sustainable (0/0)
+|   |   |   |   |   |   Country = Poland : Sustainable (0/0)
+|   |   |   |   |   |   Country = Portugal : Sustainable (0/0)
+|   |   |   |   |   |   Country = Qatar : Sustainable (0/0)
+|   |   |   |   |   |   Country = Romania : Sustainable (0/0)
+|   |   |   |   |   |   Country = Russia : Sustainable (0/0)
+|   |   |   |   |   |   Country = Rwanda : Sustainable (0/0)
+|   |   |   |   |   |   Country = Samoa : Warning (1/0)
+|   |   |   |   |   |   Country = Sao Tome and Principe : Sustainable (0/0)
+|   |   |   |   |   |   Country = Saudi Arabia : Sustainable (0/0)
+|   |   |   |   |   |   Country = Senegal : Warning (1/0)
+|   |   |   |   |   |   Country = Serbia : Sustainable (0/0)
+|   |   |   |   |   |   Country = Seychelles : Sustainable (0/0)
+|   |   |   |   |   |   Country = Sierra Leone : Sustainable (0/0)
+|   |   |   |   |   |   Country = Singapore : Sustainable (0/0)
+|   |   |   |   |   |   Country = Slovak Republic : Sustainable (0/0)
+|   |   |   |   |   |   Country = Slovenia : Sustainable (0/0)
+|   |   |   |   |   |   Country = Solomon Islands : Sustainable (0/0)
+|   |   |   |   |   |   Country = Somalia : Sustainable (0/0)
+|   |   |   |   |   |   Country = South Africa : Warning (1/0)
+|   |   |   |   |   |   Country = South Korea : Sustainable (0/0)
+|   |   |   |   |   |   Country = South Sudan : Sustainable (0/0)
+|   |   |   |   |   |   Country = Spain : Sustainable (0/0)
+|   |   |   |   |   |   Country = Sri Lanka : Sustainable (0/0)
+|   |   |   |   |   |   Country = Sudan : Sustainable (0/0)
+|   |   |   |   |   |   Country = Suriname : Warning (1/0)
+|   |   |   |   |   |   Country = Swaziland : Sustainable (0/0)
+|   |   |   |   |   |   Country = Sweden : Sustainable (0/0)
+|   |   |   |   |   |   Country = Switzerland : Sustainable (0/0)
+|   |   |   |   |   |   Country = Syria : Sustainable (0/0)
+|   |   |   |   |   |   Country = Tajikistan : Sustainable (0/0)
+|   |   |   |   |   |   Country = Tanzania : Warning (1/0)
+|   |   |   |   |   |   Country = Thailand : Sustainable (0/0)
+|   |   |   |   |   |   Country = Timor-Leste : Sustainable (0/0)
+|   |   |   |   |   |   Country = Togo : Sustainable (0/0)
+|   |   |   |   |   |   Country = Trinidad and Tobago : Sustainable (0/0)
+|   |   |   |   |   |   Country = Tunisia : Sustainable (0/0)
+|   |   |   |   |   |   Country = Turkey : Sustainable (0/0)
+|   |   |   |   |   |   Country = Turkmenistan : Sustainable (0/0)
+|   |   |   |   |   |   Country = Uganda : Sustainable (0/0)
+|   |   |   |   |   |   Country = Ukraine : Sustainable (0/0)
+|   |   |   |   |   |   Country = United Arab Emirates : Sustainable (0/0)
+|   |   |   |   |   |   Country = United Kingdom : Sustainable (0/0)
+|   |   |   |   |   |   Country = United States : Sustainable (0/0)
+|   |   |   |   |   |   Country = Uruguay : Sustainable (0/0)
+|   |   |   |   |   |   Country = Uzbekistan : Sustainable (0/0)
+|   |   |   |   |   |   Country = Venezuela : Sustainable (0/0)
+|   |   |   |   |   |   Country = Vietnam : Sustainable (0/0)
+|   |   |   |   |   |   Country = Yemen : Sustainable (0/0)
+|   |   |   |   |   |   Country = Zambia : Sustainable (0/0)
+|   |   |   |   |   |   Country = Zimbabwe : Sustainable (0/0)
+|   |   |   |   P1: State Legitimacy >= 6.25 : Warning (37/0)
+|   C1: Security Apparatus >= 7.25
+|   |   E1: Economy < 6.55
+|   |   |   Unemployment < 4.6
+|   |   |   |   Country = Afghanistan : Sustainable (0/0)
+|   |   |   |   Country = Albania : Sustainable (0/0)
+|   |   |   |   Country = Algeria : Sustainable (0/0)
+|   |   |   |   Country = Angola : Sustainable (0/0)
+|   |   |   |   Country = Antigua and Barbuda : Sustainable (0/0)
+|   |   |   |   Country = Argentina : Sustainable (0/0)
+|   |   |   |   Country = Armenia : Sustainable (0/0)
+|   |   |   |   Country = Australia : Sustainable (0/0)
+|   |   |   |   Country = Austria : Sustainable (0/0)
+|   |   |   |   Country = Azerbaijan : Sustainable (0/0)
+|   |   |   |   Country = Bahamas : Sustainable (0/0)
+|   |   |   |   Country = Bahrain : Sustainable (0/0)
+|   |   |   |   Country = Bangladesh : Sustainable (0/0)
+|   |   |   |   Country = Barbados : Sustainable (0/0)
+|   |   |   |   Country = Belarus : Sustainable (0/0)
+|   |   |   |   Country = Belgium : Sustainable (0/0)
+|   |   |   |   Country = Belize : Sustainable (0/0)
+|   |   |   |   Country = Benin : Sustainable (0/0)
+|   |   |   |   Country = Bhutan : Sustainable (0/0)
+|   |   |   |   Country = Bolivia : Sustainable (0/0)
+|   |   |   |   Country = Bosnia and Herzegovina : Sustainable (0/0)
+|   |   |   |   Country = Botswana : Sustainable (0/0)
+|   |   |   |   Country = Brazil : Sustainable (0/0)
+|   |   |   |   Country = Brunei Darussalam : Sustainable (0/0)
+|   |   |   |   Country = Bulgaria : Sustainable (0/0)
+|   |   |   |   Country = Burkina Faso : Sustainable (0/0)
+|   |   |   |   Country = Burundi : Sustainable (0/0)
+|   |   |   |   Country = Cambodia : Sustainable (0/0)
+|   |   |   |   Country = Cameroon : Alert (1/0)
+|   |   |   |   Country = Canada : Sustainable (0/0)
+|   |   |   |   Country = Cape Verde : Sustainable (0/0)
+|   |   |   |   Country = Central African Republic : Sustainable (0/0)
+|   |   |   |   Country = Chad : Sustainable (0/0)
+|   |   |   |   Country = Chile : Sustainable (0/0)
+|   |   |   |   Country = China : Sustainable (0/0)
+|   |   |   |   Country = Colombia : Sustainable (0/0)
+|   |   |   |   Country = Comoros : Sustainable (0/0)
+|   |   |   |   Country = Congo Democratic Republic : Sustainable (0/0)
+|   |   |   |   Country = Congo Republic : Sustainable (0/0)
+|   |   |   |   Country = Costa Rica : Sustainable (0/0)
+|   |   |   |   Country = Croatia : Sustainable (0/0)
+|   |   |   |   Country = Cuba : Sustainable (0/0)
+|   |   |   |   Country = Cyprus : Sustainable (0/0)
+|   |   |   |   Country = Czech Republic : Sustainable (0/0)
+|   |   |   |   Country = Denmark : Sustainable (0/0)
+|   |   |   |   Country = Djibouti : Sustainable (0/0)
+|   |   |   |   Country = Dominican Republic : Sustainable (0/0)
+|   |   |   |   Country = Ecuador : Sustainable (0/0)
+|   |   |   |   Country = Egypt : Sustainable (0/0)
+|   |   |   |   Country = El Salvador : Sustainable (0/0)
+|   |   |   |   Country = Equatorial Guinea : Sustainable (0/0)
+|   |   |   |   Country = Eritrea : Sustainable (0/0)
+|   |   |   |   Country = Estonia : Sustainable (0/0)
+|   |   |   |   Country = Ethiopia : Sustainable (0/0)
+|   |   |   |   Country = Fiji : Sustainable (0/0)
+|   |   |   |   Country = Finland : Sustainable (0/0)
+|   |   |   |   Country = France : Sustainable (0/0)
+|   |   |   |   Country = Gabon : Sustainable (0/0)
+|   |   |   |   Country = Gambia : Sustainable (0/0)
+|   |   |   |   Country = Georgia : Sustainable (0/0)
+|   |   |   |   Country = Germany : Sustainable (0/0)
+|   |   |   |   Country = Ghana : Sustainable (0/0)
+|   |   |   |   Country = Greece : Sustainable (0/0)
+|   |   |   |   Country = Grenada : Sustainable (0/0)
+|   |   |   |   Country = Guatemala : Sustainable (0/0)
+|   |   |   |   Country = Guinea : Sustainable (0/0)
+|   |   |   |   Country = Guinea Bissau : Sustainable (0/0)
+|   |   |   |   Country = Guyana : Sustainable (0/0)
+|   |   |   |   Country = Haiti : Sustainable (0/0)
+|   |   |   |   Country = Honduras : Sustainable (0/0)
+|   |   |   |   Country = Hungary : Sustainable (0/0)
+|   |   |   |   Country = Iceland : Sustainable (0/0)
+|   |   |   |   Country = India : Warning (1/0)
+|   |   |   |   Country = Indonesia : Sustainable (0/0)
+|   |   |   |   Country = Iran : Sustainable (0/0)
+|   |   |   |   Country = Iraq : Sustainable (0/0)
+|   |   |   |   Country = Ireland : Sustainable (0/0)
+|   |   |   |   Country = Israel and West Bank : Sustainable (0/0)
+|   |   |   |   Country = Italy : Sustainable (0/0)
+|   |   |   |   Country = Jamaica : Sustainable (0/0)
+|   |   |   |   Country = Japan : Sustainable (0/0)
+|   |   |   |   Country = Jordan : Sustainable (0/0)
+|   |   |   |   Country = Kazakhstan : Sustainable (0/0)
+|   |   |   |   Country = Kenya : Sustainable (0/0)
+|   |   |   |   Country = Kuwait : Sustainable (0/0)
+|   |   |   |   Country = Kyrgyz Republic : Sustainable (0/0)
+|   |   |   |   Country = Laos : Sustainable (0/0)
+|   |   |   |   Country = Latvia : Sustainable (0/0)
+|   |   |   |   Country = Lebanon : Sustainable (0/0)
+|   |   |   |   Country = Lesotho : Sustainable (0/0)
+|   |   |   |   Country = Liberia : Sustainable (0/0)
+|   |   |   |   Country = Libya : Sustainable (0/0)
+|   |   |   |   Country = Lithuania : Sustainable (0/0)
+|   |   |   |   Country = Luxembourg : Sustainable (0/0)
+|   |   |   |   Country = Macedonia : Sustainable (0/0)
+|   |   |   |   Country = Madagascar : Sustainable (0/0)
+|   |   |   |   Country = Malawi : Sustainable (0/0)
+|   |   |   |   Country = Malaysia : Sustainable (0/0)
+|   |   |   |   Country = Maldives : Sustainable (0/0)
+|   |   |   |   Country = Mali : Sustainable (0/0)
+|   |   |   |   Country = Malta : Sustainable (0/0)
+|   |   |   |   Country = Mauritania : Sustainable (0/0)
+|   |   |   |   Country = Mauritius : Sustainable (0/0)
+|   |   |   |   Country = Mexico : Sustainable (0/0)
+|   |   |   |   Country = Micronesia : Sustainable (0/0)
+|   |   |   |   Country = Moldova : Sustainable (0/0)
+|   |   |   |   Country = Mongolia : Sustainable (0/0)
+|   |   |   |   Country = Montenegro : Sustainable (0/0)
+|   |   |   |   Country = Morocco : Sustainable (0/0)
+|   |   |   |   Country = Mozambique : Sustainable (0/0)
+|   |   |   |   Country = Myanmar : Sustainable (0/0)
+|   |   |   |   Country = Namibia : Sustainable (0/0)
+|   |   |   |   Country = Nepal : Sustainable (0/0)
+|   |   |   |   Country = Netherlands : Sustainable (0/0)
+|   |   |   |   Country = New Zealand : Sustainable (0/0)
+|   |   |   |   Country = Nicaragua : Sustainable (0/0)
+|   |   |   |   Country = Niger : Sustainable (0/0)
+|   |   |   |   Country = Nigeria : Sustainable (0/0)
+|   |   |   |   Country = North Korea : Sustainable (0/0)
+|   |   |   |   Country = Norway : Sustainable (0/0)
+|   |   |   |   Country = Oman : Sustainable (0/0)
+|   |   |   |   Country = Pakistan : Sustainable (0/0)
+|   |   |   |   Country = Panama : Sustainable (0/0)
+|   |   |   |   Country = Papua New Guinea : Sustainable (0/0)
+|   |   |   |   Country = Paraguay : Sustainable (0/0)
+|   |   |   |   Country = Peru : Sustainable (0/0)
+|   |   |   |   Country = Philippines : Warning (1/0)
+|   |   |   |   Country = Poland : Sustainable (0/0)
+|   |   |   |   Country = Portugal : Sustainable (0/0)
+|   |   |   |   Country = Qatar : Sustainable (0/0)
+|   |   |   |   Country = Romania : Sustainable (0/0)
+|   |   |   |   Country = Russia : Sustainable (0/0)
+|   |   |   |   Country = Rwanda : Sustainable (0/0)
+|   |   |   |   Country = Samoa : Sustainable (0/0)
+|   |   |   |   Country = Sao Tome and Principe : Sustainable (0/0)
+|   |   |   |   Country = Saudi Arabia : Sustainable (0/0)
+|   |   |   |   Country = Senegal : Sustainable (0/0)
+|   |   |   |   Country = Serbia : Sustainable (0/0)
+|   |   |   |   Country = Seychelles : Sustainable (0/0)
+|   |   |   |   Country = Sierra Leone : Sustainable (0/0)
+|   |   |   |   Country = Singapore : Sustainable (0/0)
+|   |   |   |   Country = Slovak Republic : Sustainable (0/0)
+|   |   |   |   Country = Slovenia : Sustainable (0/0)
+|   |   |   |   Country = Solomon Islands : Sustainable (0/0)
+|   |   |   |   Country = Somalia : Sustainable (0/0)
+|   |   |   |   Country = South Africa : Sustainable (0/0)
+|   |   |   |   Country = South Korea : Sustainable (0/0)
+|   |   |   |   Country = South Sudan : Sustainable (0/0)
+|   |   |   |   Country = Spain : Sustainable (0/0)
+|   |   |   |   Country = Sri Lanka : Alert (1/0)
+|   |   |   |   Country = Sudan : Sustainable (0/0)
+|   |   |   |   Country = Suriname : Sustainable (0/0)
+|   |   |   |   Country = Swaziland : Sustainable (0/0)
+|   |   |   |   Country = Sweden : Sustainable (0/0)
+|   |   |   |   Country = Switzerland : Sustainable (0/0)
+|   |   |   |   Country = Syria : Sustainable (0/0)
+|   |   |   |   Country = Tajikistan : Sustainable (0/0)
+|   |   |   |   Country = Tanzania : Sustainable (0/0)
+|   |   |   |   Country = Thailand : Warning (1/0)
+|   |   |   |   Country = Timor-Leste : Sustainable (0/0)
+|   |   |   |   Country = Togo : Sustainable (0/0)
+|   |   |   |   Country = Trinidad and Tobago : Sustainable (0/0)
+|   |   |   |   Country = Tunisia : Sustainable (0/0)
+|   |   |   |   Country = Turkey : Sustainable (0/0)
+|   |   |   |   Country = Turkmenistan : Sustainable (0/0)
+|   |   |   |   Country = Uganda : Sustainable (0/0)
+|   |   |   |   Country = Ukraine : Sustainable (0/0)
+|   |   |   |   Country = United Arab Emirates : Sustainable (0/0)
+|   |   |   |   Country = United Kingdom : Sustainable (0/0)
+|   |   |   |   Country = United States : Sustainable (0/0)
+|   |   |   |   Country = Uruguay : Sustainable (0/0)
+|   |   |   |   Country = Uzbekistan : Sustainable (0/0)
+|   |   |   |   Country = Venezuela : Sustainable (0/0)
+|   |   |   |   Country = Vietnam : Sustainable (0/0)
+|   |   |   |   Country = Yemen : Sustainable (0/0)
+|   |   |   |   Country = Zambia : Sustainable (0/0)
+|   |   |   |   Country = Zimbabwe : Sustainable (0/0)
+|   |   |   Unemployment >= 4.6 : Warning (9/0)
+|   |   E1: Economy >= 6.55
+|   |   |   Education Index < 0.67
+|   |   |   |   P3: Human Rights < 7.1
+|   |   |   |   |   Rank < 45 : Alert (3/0)
+|   |   |   |   |   Rank >= 45 : Warning (1/0)
+|   |   |   |   P3: Human Rights >= 7.1 : Alert (27/0)
+|   |   |   Education Index >= 0.67 : Warning (1/0)
+
+Size of the tree : 393
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         118               69.0058 %
+Incorrectly Classified Instances        53               30.9942 %
+Kappa statistic                          0.5164
+Mean absolute error                      0.1807
+Root mean squared error                  0.3332
+Relative absolute error                 52.466  %
+Root relative squared error             80.3708 %
+Total Number of Instances              171     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.391    0.027    0.692      0.391    0.500      0.469    0.872     0.595     Sustainable
+                 0.515    0.087    0.586      0.515    0.548      0.450    0.838     0.578     Stable
+                 0.924    0.370    0.682      0.924    0.785      0.571    0.860     0.819     Warning
+                 0.528    0.022    0.864      0.528    0.655      0.616    0.879     0.717     Alert
+Weighted Avg.    0.690    0.196    0.703      0.690    0.674      0.543    0.861     0.721     
+
+=== Confusion Matrix ===
+
+  a  b  c  d   <-- classified as
+  9  9  5  0 |  a = Sustainable
+  4 17 12  0 |  b = Stable
+  0  3 73  3 |  c = Warning
+  0  0 17 19 |  d = Alert
+
